@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería</title>
+    <link rel="stylesheet", href="styles.css">
+</head>
+<body>
+    <!--La información utilizada para esta página solo es un ejemplo, no tiene ninguna relación con la realidad-->
+    <!--Menú de navegación-->
+    <div class="menu">
+        <!--Aqui se coloca el nombre de la pagina y el menu de navegacion-->
+        <header>
+            <!--Nombre del restaurante y de la pagina-->
+            <div class="nombrePagina">
+                <!--Aqui va el logo-->
+                <h1>La Dolce Vita</h1>
+                <h2>Galería</h2>
+            </div>
+            <!--Menu de navegacion de la pagina-->
+            <nav class="navegador">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="comida.html">Menú</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!--Galería de imagenes de comida que ofrece el restaurante usando un carrusel de imagenes-->
+    <div id="carrusel1">
+        <div class="titulo">
+            <h3>Un Paseo Visual por Nuestro Menú</h3>
+        </div>
+        <p>
+            Nuestra galería ofrece una visión cercana de nuestros platos más destacados. Desde las pizzas artesanales con sus ingredientes frescos hasta las pastas al dente que te transportarán a Italia, cada imagen es una invitación a explorar las delicias que te esperan en La Dolce Vita.
+        </p>
+        <!--Primer carrusel de imagenes-->
+        <div class="slide">
+            <div class="slide-inner">
+                <input class="slide-open" type="radio" id="slide-1-1" name="slide1" aria-hidden="true" hidden=""
+                checked="checked">
+                <!--Se coloca la imagen comida1 en el carrusel-->
+                <div class="slide-item">
+                    <img src="Imagenes/Comida1.jpeg">
+                </div>
+                <input class="slide-open" type="radio" id="slide-2-1" name="slide1" aria-hidden="true" hidden="">
+                <!--Se coloca la imagen comida2 en el carrusel-->
+                <div class="slide-item">
+                    <img src="Imagenes/Comida2.jpg">
+                </div>
+                <input class="slide-open" type="radio" id="slide-3-1" name="slide1" aria-hidden="true" hidden="">
+                <!--Se coloca la imagen comida3 en el carrusel-->
+                <div class="slide-item">
+                    <img src="Imagenes/Comida3.jpg">
+                </div>
+                <!--Se coloca la etiqueta de navegacion para el carrusel en cada uno de los slide-->
+                <label for="slide-3-1" class="slide-control prev control-1-1">‹</label>
+                <label for="slide-2-1" class="slide-control next control-1-1">›</label>
+                <label for="slide-1-1" class="slide-control prev control-2-1">‹</label>
+                <label for="slide-3-1" class="slide-control next control-2-1">›</label>
+                <label for="slide-2-1" class="slide-control prev control-3-1">‹</label>
+                <label for="slide-1-1" class="slide-control next control-3-1">›</label>
+                <!--Se coloca un indicador para cada uno de los slide para saber en que imagen estamos-->
+                <ol class="slide-indicador">
+                    <li>
+                        <label for="slide-1-1" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-2-1" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-3-1" class="slide-circulo">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!--Galería de imagenes del restaurante usando un carrusel de imagenes-->
+    <div id="carrusel2">
+        <div class="titulo">
+            <h3>Descubre la Esencia de La Dolce Vita</h3>
+        </div>
+        <p>Bienvenido a nuestra Galería Fotográfica, donde te invitamos a explorar visualmente la experiencia única que ofrecemos en La Dolce Vita. Cada imagen cuenta una historia de sabor, ambiente y dedicación culinaria que nos distingue.</p>
+        <!--Segundo carrusel de imagenes-->
+        <div class="slide">
+            <div class="slide-inner">
+                <input class="slide-open" type="radio" id="slide-1-2" 
+                  name="slide2" aria-hidden="true" hidden="" checked="checked">
+                <!--Se coloca la imagen ResExterior en el carrusel-->
+                <div class="slide-item">
+                    <img src="Imagenes/ResExterior.jpg">
+                </div>
+                <input class="slide-open" type="radio" id="slide-2-2" 
+                  name="slide2" aria-hidden="true" hidden="">
+                <!--Se coloca la imagen ResInterior en el carrusel-->
+                <div class="slide-item">
+                    <img src="Imagenes/ResInterior.jpg">
+                </div>
+                <input class="slide-open" type="radio" id="slide-3-2" 
+                  name="slide2" aria-hidden="true" hidden="">
+                <!--Se coloca la imagen ResInterior2 en el carrusel-->
+                <div class="slide-item">
+                    <img src="Imagenes/ResInterior2.jpg">
+                </div>
+                <!--Se coloca la etiqueta de navegacion para el carrusel en cada uno de los slide-->
+                <label for="slide-3-2" class="slide-control prev control-1-2">‹</label>
+                <label for="slide-2-2" class="slide-control next control-1-2">›</label>
+                <label for="slide-1-2" class="slide-control prev control-2-2">‹</label>
+                <label for="slide-3-2" class="slide-control next control-2-2">›</label>
+                <label for="slide-2-2" class="slide-control prev control-3-2">‹</label>
+                <label for="slide-1-2" class="slide-control next control-3-2">›</label>
+                <!--Se coloca un indicador para cada uno de los slide para saber en que imagen estamos-->
+                <ol class="slide-indicador">
+                    <li>
+                        <label for="slide-1-2" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-2-2" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-3-2" class="slide-circulo">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!--Pie de página-->
+    <div class="piePagina">
+        <footer>
+            <h3>Anahi Alondra Lozano Ramos</h3>
+            <h3>Programación web 1</h3>
+            <h3>Ingeniería en Computación</h3>
+            <h3>Página hecha con fines educativos</h3>
+            <h3>Todos los derechos reservados</h3>
+        </footer>
+    </div>
+
+</body>
+</html>

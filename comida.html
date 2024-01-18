@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida</title>
+    <link rel="stylesheet", href="styles.css">
+</head>
+<body>
+    <!--La información utilizada para esta página solo es un ejemplo, no tiene ninguna relación con la realidad-->
+    <!--Menú de navegación-->
+    <div class="menu">
+        <header>
+            <div class="nombrePagina">
+                <!--Nombre del restaurante y de la pagina-->
+                <h1>La Dolce Vita</h1>
+                <h2>Menú</h2>
+            </div>
+            <!--Menu de navegacion de la pagina-->
+            <nav class="navegador">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="comida.html">Menú</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!--Platos principales del restaurante con la descripcion y precios para cada uno-->
+    <div id="principales">
+        <div class="titulo">
+            <h3>Platos principales</h3>
+        </div>
+        <!--Descripcion del platillo Lasagna con una imagen de este-->
+        <div class="platos">
+            <h4>Lasagna</h4>
+            <img src="Imagenes/Lasagna.jpeg" alt="Lasagna">
+            <p>La lasaña es un plato italiano que consiste en capas de láminas de pasta intercaladas con carne, salsa de tomate y queso, horneadas hasta que estén bien cocidas y mezcladas. Es conocida por ser una comida reconfortante y deliciosa.</p>
+            <!--Precio del platillo dependiendo del tamaño de este-->
+            <table border="1" align="center">
+                <thead>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pequeño</td>
+                        <td>$35</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mediano</td>
+                        <td>$50</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande</td>
+                        <td>
+                            $75
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!--Descripcion del platillo Ravioli con una imagen de este-->
+        <div class="platos">
+            <h4>Ravioli</h4>
+            <img src="Imagenes/Ravioli.jpg" alt="Ravioli">
+            <p>Los ravioli son pasta rellena, pequeñas porciones de masa rellenas de ingredientes como carne, queso o espinacas. Se cocinan y se sirven con diversas salsas. ¡Deliciosos paquetes de sabor en cada bocado!</p>
+            <!--Precio del platillo dependiendo del tamaño de este-->
+            <table border="1" align="center">
+                <thead>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pequeño</td>
+                        <td>$30</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mediano</td>
+                        <td>$45</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande</td>
+                        <td>
+                            $70
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="platos">
+            <!--Descripcion del platillo Pizza Margherita con una imagen de este-->
+            <h4>Pizza Margherita</h4>
+            <img src="Imagenes/Pizza.jpeg" alt="PizzaMargherita">
+            <p>La Pizza Margherita es una pizza italiana con masa delgada, salsa de tomate, mozzarella fresca y albahaca. Destaca por sus colores que representan la bandera italiana: rojo, blanco y verde. Es una comida simple y fresca</p>
+            <!--Precio del platillo dependiendo del tamaño de este-->
+            <table border="1" align="center">
+                <thead>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pequeño</td>
+                        <td>$55</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mediano</td>
+                        <td>$80</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande</td>
+                        <td>
+                            $100
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!--Descripcion del platillo Minestrone con una imagen de este-->
+        <div class="platos">
+            <h4>Minestrone</h4>
+            <img src="Imagenes/Minestrone.jpg" alt="Minestrone">
+            <p>El Minestrone es una sopa italiana abundante y variada que combina una mezcla de verduras, como judías verdes, zanahorias, apio y tomates, con legumbres y pasta. Se sazona con hierbas y ajo, y a menudo incluye caldo.</p>
+            <!--Precio del platillo dependiendo del tamaño de este-->
+            <table border="1" align="center">
+                <thead>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pequeño</td>
+                        <td>$45</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mediano</td>
+                        <td>$60</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande</td>
+                        <td>
+                            $80
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!--Descripcion del platillo Cannelloni con una imagen de este-->
+        <div class="platos">
+            <h4>Cannelloni</h4>
+            <img src="Imagenes/Canelloni.png" alt="Canelloni">
+            <p>Los Cannelloni son tubos de pasta rellenos, comúnmente rellenos de una mezcla de carne, espinacas y ricotta. Estos cilindros se cocinan al horno y se sirven con una variedad de salsas, como salsa de tomate o bechamel. </p>
+            <!--Precio del platillo dependiendo del tamaño de este-->
+            <table border="1" align="center">
+                <thead>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pequeño</td>
+                        <td>$30</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mediano</td>
+                        <td>$45</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande</td>
+                        <td>
+                            $60
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!--Descripcion del platillo Rucola con una imagen de este-->
+        <div class="platos">
+            <h4>Bresaola e Rucola</h4>
+            <img src="Imagenes/bresaola-rucola-e-grana.jpg" alt="Bresaola">
+            <p>Bresaola e Rucola es una entrada italiana que combina finas láminas de carne de res curada (bresaola) con rúcula fresca, aliñada con aceite de oliva y queso parmesano. Una experiencia de sabor equilibrada y deliciosa.</p>
+            <!--Precio del platillo dependiendo del tamaño de este-->
+            <table border="1" align="center">
+                <thead>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pequeño</td>
+                        <td>$50</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mediano</td>
+                        <td>$70</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande</td>
+                        <td>
+                            $90
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+    <!--Bebidas del restaurante con la descripcion y precios para cada una-->
+    <div id="bebidas">
+        <div class="titulo">
+            <h3>Bebidas</h3>
+        </div>
+        <!--Descripcion de la bebida Espresso con una imagen de esta-->
+        <div class="platos">
+            <h4>Espresso</h4>
+            <img src="Imagenes/espresso.jpg" alt="Espresso">
+            <p>El Espresso es un café italiano concentrado y fuerte, hecho al forzar agua caliente a través de granos de café finamente molidos. Es conocido por su breve preparación y sabor robusto, y se sirve en pequeñas cantidades.</p>
+            <!--Precio de la bebida dependiendo del tamaño de esta-->
+            <table border="1" align="center">
+                <thead>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pequeño</td>
+                        <td>$25</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mediano</td>
+                        <td>$30</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande</td>
+                        <td>
+                            $40
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!--Descripcion de la bebida Capuccino con una imagen de esta-->
+        <div class="platos">
+            <h4>Cappuccino</h4>
+            <img src="Imagenes/Capuccino.jpg" alt="Cappuccino">
+            <p>El Cappuccino es una bebida italiana de café que consiste en espresso mezclado con cantidades iguales de leche vaporizada y espuma de leche. Se caracteriza por su capa cremosa y se adorna con un toque de cacao en polvo.</p>
+            <!--Precio de la bebida dependiendo del tamaño de esta-->
+            <table border="1" align="center">
+                <thead>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pequeño</td>
+                        <td>$27</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mediano</td>
+                        <td>$35</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande</td>
+                        <td>
+                            $43
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!--Descripcion de la bebida Chinotto con una imagen de esta-->
+        <div class="platos">
+            <h4>Chinotto</h4>
+            <img src="Imagenes/Chinotto.png" alt="Chinotto">
+            <p>Chinotto es una bebida gaseosa italiana que se elabora a partir de la fruta del mismo nombre. Esta bebida tiene un sabor agridulce y a menudo se describe como una mezcla de cítricos con un toque amargo. </p>
+            <!--Precio de la bebida dependiendo del tamaño de esta-->
+            <table border="1" align="center">
+                <thead>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pequeño</td>
+                        <td>$22</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mediano</td>
+                        <td>$30</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande</td>
+                        <td>
+                            $38
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="platos">
+            <!--Descripcion de la bebida Marocchino con una imagen de esta-->
+            <h4>Marocchino</h4>
+            <img src="Imagenes/Marrochino.jpg" alt="Marocchino">
+            <p>Marocchino es una bebida italiana que combina espresso, leche vaporizada y cacao en polvo, ofreciendo un equilibrio entre el fuerte sabor del café, la cremosidad de la leche y un toque de cacao.</p>
+            <!--Precio de la bebida dependiendo del tamaño de esta-->
+            <table border="1" align="center">
+                <thead>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pequeño</td>
+                        <td>$28</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mediano</td>
+                        <td>$36</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande</td>
+                        <td>
+                            $42
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!--Descripcion de la bebida Bicerin con una imagen de esta-->
+        <div class="platos">
+            <h4>Bicerin</h4>
+            <img src="Imagenes/Bicerin.jpg" alt="Bicerin">
+            <p>Bicerin es una bebida tradicional de Turín, Italia, que consiste en capas de espresso, chocolate caliente y crema espesa. Esta mezcla crea una combinación deliciosa de sabores y texturas, con el contraste entre el café y el chocolate.</p>
+            <!--Precio de la bebida dependiendo del tamaño de esta-->
+            <table border="1" align="center">
+                <thead>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pequeño</td>
+                        <td>$24</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mediano</td>
+                        <td>$30</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande</td>
+                        <td>
+                            $36
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="platos">
+            <!--Descripcion de la bebida Granita al Caffè con una imagen de esta-->
+            <h4>Granita al Caffè</h4>
+            <img src="Imagenes/Granita.jpeg" alt="Granita">
+            <p>La Granita al Caffè como bebida es una refrescante mezcla de hielo triturado, café fuerte y azúcar. La intensidad del café se equilibra con la frescura del hielo. Crea una experiencia agradable para los días calurosos</p>
+            <!--Precio de la bebida dependiendo del tamaño de esta-->
+            <table border="1" align="center">
+                <thead>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pequeño</td>
+                        <td>$21</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mediano</td>
+                        <td>$29</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande</td>
+                        <td>
+                            $33
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+    <!--Postres del Menú con descripcion y precios para cada uno-->
+    <div id="postres">
+        <div class="titulo">
+            <h3>Postres</h3>
+        </div>
+        <!--Descripcion del postre Tiramisú con una imagen de este-->
+        <div class="platos">
+            <h4>Tiramisú</h4>
+            <img src="Imagenes/Tiramisu.jpeg" alt="Tiramisu">
+            <p>El Tiramisú es un postre italiano que se compone de capas de bizcocho (impregnado de café y licor), alternadas con una mezcla cremosa de mascarpone, huevos y azúcar. Reconocido por su textura suave y su sabor equilibrado</p>
+            <!--Precio del postre dependiendo del tamaño de este-->
+            <table border="1" align="center">
+                <thead>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pequeño</td>
+                        <td>$38</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mediano</td>
+                        <td>$45</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande</td>
+                        <td>
+                            $55
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!--Descripcion del postre Cannoli con una imagen de este-->
+        <div class="platos">
+            <h4>Cannoli</h4>
+            <img src="Imagenes/Cannoli.jpeg" alt="Cannoli">
+            <p>Cannoli es un postre italiano que consiste en pequeños tubos de masa frita, crujiente y enrollada, rellenos típicamente con una mezcla cremosa de ricotta, azúcar, chocolate, frutas confitadas. Cuentan con una textura crujiente.</p>
+            <!--Precio del postre dependiendo del tamaño de este-->
+            <table border="1" align="center">
+                <thead>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pequeño</td>
+                        <td>$38</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mediano</td>
+                        <td>$46</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande</td>
+                        <td>
+                            $58
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!--Descripcion del postre Panna Cotta con una imagen de este-->
+        <div class="platos">
+            <h4>Panna Cotta</h4>
+            <img src="Imagenes/Panna.jpg" alt="Panna">
+            <p>Panna Cotta es un postre italiano con una textura suave y sedosa, hecho con crema dulce espesada con gelatina y refrigerada hasta obtener firmeza. Se sirve a menudo con frutas frescas o salsas. Se caracteriza por su suavidad.</p>
+            <!--Precio del postre dependiendo del tamaño de este-->
+            <table border="1" align="center">
+                <thead>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pequeño</td>
+                        <td>$30</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mediano</td>
+                        <td>$38</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande</td>
+                        <td>
+                            $43
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!--Descripcion del postre Torta della Nonna con una imagen de este-->
+        <div class="platos">
+            <h4>Torta della Nonna</h4>
+            <img src="Imagenes/Torta.jpeg" alt="Torta">
+            <p>Torta della Nonna es un postre toscano que presenta una base de masa quebrada rellena con crema pastelera de almendra y piñones, adornada con azúcar glas y piñones. Tiene un sabor delicado y una presentación elegante.</p>
+            <!--Precio del postre dependiendo del tamaño de este-->
+            <table border="1" align="center">
+                <thead>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pequeño</td>
+                        <td>$35</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mediano</td>
+                        <td>$44</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande</td>
+                        <td>
+                            $50
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!--Descripcion del postre Cassata Siciliana con una imagen de este-->
+        <div class="platos">
+            <h4>Cassata Siciliana</h4>
+            <img src="Imagenes/Cassata.jpg" alt="Cassata">
+            <p>Cassata Siciliana es un postre que consiste en un bizcocho empapado en licor, relleno de ricotta endulzada con azúcar y aromatizada con chocolate y frutas. Se cubre con glaseado de azúcar y frutas confitadas.</p>
+            <!--Precio del postre dependiendo del tamaño de este-->
+            <table border="1" align="center">
+                <thead>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pequeño</td>
+                        <td>$37</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mediano</td>
+                        <td>$46</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande</td>
+                        <td>
+                            $52
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <!--Descripcion del postre Sfogliatella Riccia con una imagen de este-->
+        <div class="platos">
+            <h4>Sfogliatella Riccia</h4>
+            <img src="Imagenes/Sfogliatelle.jpeg" alt="Sfogliatella">
+            <p>Sfogliatella Riccia es un pastel italiano que se distingue por su forma en espiral, con capas finas y crujientes de hojaldre enrolladas. El relleno tradicional incluye ricotta, azúcar, huevos, canela y cáscara de naranja.</p>
+            <!--Precio del postre dependiendo del tamaño de este-->
+            <table border="1" align="center">
+                <thead>
+                    <th>Tamaño</th>
+                    <th>Precio</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pequeño</td>
+                        <td>$30</td>
+                    </tr>
+
+                    <tr>
+                        <td>Mediano</td>
+                        <td>$36</td>
+                    </tr>
+
+                    <tr>
+                        <td>Grande</td>
+                        <td>
+                            $42
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+    <!--Paquetes que ofrece el restaurante con su descripcion e imagen de cada uno-->
+    <div id="paquetes">
+        <div class="titulo">
+            <h3>Paquetes</h3>
+        </div>
+        <!--Nombre, descripción, precio e imagen del paquete Predestinato-->
+        <div class="caja2">
+            <h4>Paquete Predestinato</h4>
+            <img src="Imagenes/Predestinato.jpg" alt="Predestinato">
+            <p>El paquete Predestinato incluye como platillo principal Canellonis, como bebida un Espresso, y postre Sfogliatella Riccia. Todos estos platillos son de tamaño mediano</p>
+            <p>El costo de este paquete es de $90.</p>
+            
+            
+        </div>
+
+        <!--Nombre, descripción, precio e imagen del paquete Insegnante-->
+        <div class="caja2">
+            <h4>Paquete Insegnante</h4>
+            <img src="Imagenes/Insegnante.jpg" alt="Insegnante">
+            <p>El paquete Insegnante incluye como platillo principal Lasagna, como bebida un Marocchino, y postre Tiramisú. Todos estos platillos son de tamaño mediano</p>
+            <p>El costo de este paquete es de $110.</p>
+            
+        </div>
+
+        <!--Nombre, descripción, precio e imagen del paquete Leone-->
+        <div class="caja2">
+            <h4>Paquete Leone</h4>
+            <img src="Imagenes/Leone.jpg" alt="Leone">
+            <p>El paquete Leone incluye como platillos principales Minestrone y Ravioli, como bebida un Chinotto, y postre Torta della Nonna. Todos estos platillos son de tamaño mediano.</p>
+            <p>El costo de este paquete es de $125.</p>
+            
+        </div>
+
+        <!--Nombre, descripción, precio e imagen del paquete Festa-->
+        <div class="caja2">
+            <h4>Paquete Festa</h4>
+            <img src="Imagenes/Festa.jpg" alt="Festa">
+            <p>El paquete Leone incluye como platillos principales Lasagna y Pizza Margherita, como bebida un Capuccino, y postre Cassata Siciliana. Todos estos platillos son de tamaño grande.</p>
+            <p>El costo de este paquete es de $250.</p>
+            
+        </div>
+
+    </div>
+
+    <!--Pie de página-->
+    <div class="piePagina">
+        <footer>
+            <h3>Anahi Alondra Lozano Ramos</h3>
+            <h3>Programación web 1</h3>
+            <h3>Ingeniería en Computación</h3>
+            <h3>Página hecha con fines educativos</h3>
+            <h3>Todos los derechos reservados</h3>
+        </footer>
+    </div>
+
+</body>
+</html>

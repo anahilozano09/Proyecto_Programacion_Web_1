@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones</title>
+    <link rel="stylesheet", href="styles.css">
+</head>
+<body>
+    <!--La información utilizada para esta página solo es un ejemplo, no tiene ninguna relación con la realidad-->
+    <!--Menú de navegación-->
+    <div class="menu">
+        <!--Aqui se coloca el nombre de la pagina y el menu de navegacion-->
+        <header>
+            <!--Nombre del restaurante y de la pagina-->
+            <div class="nombrePagina">
+                <!--Aqui va el logo-->
+                <h1>La Dolce Vita</h1>
+                <h2>Promociones</h2>
+            </div>
+            <!--Menu de navegacion de la pagina-->
+            <nav class="navegador">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="comida.html">Menú</a></li>
+                    <li><a href="promociones.html">Promociones</a></li>
+                    <li><a href="galeria.html">Galería</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!--Imagenes promocionales de nuestro restaurante-->
+    <div id="carrusel3">
+        <div class="titulo">
+            <h3>Explora Nuestras Promociones Exclusivas de La Dolce Vita</h3>
+        </div>
+        <p>Bienvenido a nuestra sección de promociones, donde la deliciosa experiencia italiana se combina con ofertas irresistibles. En La Dolce Vita, no solo te invitamos a disfrutar de sabores auténticos, sino también a aprovechar nuestras promociones especiales que hacen que cada visita sea aún más memorable.</p>
+        <!--Tercer carrusel de imagenes-->
+        <div class="slide">
+            <div class="slide-inner">
+                <input class="slide-open" type="radio" id="slide-1-3" 
+                  name="slide3" aria-hidden="true" hidden="" checked="checked">
+                <!--Se coloca la imagen promocion1 en el carrusel-->
+                <div class="slide-item">
+                    <img src="Imagenes/Promocion1.png">
+                </div>
+                <input class="slide-open" type="radio" id="slide-2-3" 
+                  name="slide3" aria-hidden="true" hidden="">
+                <!--Se coloca la imagen promocion2 en el carrusel-->
+                <div class="slide-item">
+                    <img src="Imagenes/Promocion2.png">
+                </div>
+                <input class="slide-open" type="radio" id="slide-3-3" 
+                  name="slide3" aria-hidden="true" hidden="">
+                <!--Se coloca la imagen promocion3 en el carrusel-->
+                <div class="slide-item">
+                    <img src="Imagenes/Promocion3.png">
+                </div>
+                <!--Se coloca la etiqueta de navegacion para el carrusel en cada uno de los slide-->
+                <label for="slide-3-3" class="slide-control prev control-1-3">‹</label>
+                <label for="slide-2-3" class="slide-control next control-1-3">›</label>
+                <label for="slide-1-3" class="slide-control prev control-2-3">‹</label>
+                <label for="slide-3-3" class="slide-control next control-2-3">›</label>
+                <label for="slide-2-3" class="slide-control prev control-3-3">‹</label>
+                <label for="slide-1-3" class="slide-control next control-3-3">›</label>
+                <!--Se coloca un indicador para cada uno de los slide para saber en que imagen estamos-->
+                <ol class="slide-indicador">
+                    <li>
+                        <label for="slide-1-3" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-2-3" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-3-3" class="slide-circulo">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!--Pie de página-->
+    <div class="piePagina">
+        <footer>
+            <h3>Anahi Alondra Lozano Ramos</h3>
+            <h3>Programación web 1</h3>
+            <h3>Ingeniería en Computación</h3>
+            <h3>Página hecha con fines educativos</h3>
+            <h3>Todos los derechos reservados</h3>
+        </footer>
+    </div>
+
+</body>
+</html>
