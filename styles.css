@@ -1,0 +1,548 @@
+/*Fuentes que se van a utilizar a lo largo de las paginas*/
+@font-face {
+    font-family: 'Golden Lines';
+    src: url(Fuentes/GoldLinesTrial.otf);
+    font-style: normal;
+    font-weight: normal;
+  }
+
+@font-face {
+    font-family: 'Golden Lines Serif';
+    src: url(Fuentes/GoldLinesSerifTrial.otf);
+    font-style: normal;
+    font-weight: normal;
+  }
+
+@font-face{
+    font-family: 'Quicksand';
+    src: url(Fuentes/Quicksand_Book.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Quicksand Bold';
+    src: url(Fuentes/Quicksand_Bold.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+/*Estilo para la etiqueta a*/
+a{
+    text-decoration: none;
+}
+/*Fondo para la etiqueta body*/
+body{
+    background: #fdd48d;
+}
+/*Decoración para la clase menu*/
+.menu{
+    background: rgb(28,222,39);
+    background: linear-gradient(45deg, rgba(28,222,39,1) 0%, rgba(255,255,255,1) 50%, rgba(233,22,22,1) 100%);
+    text-align: center;
+    font-family: 'Golden Lines', sans-serif;
+    font-size: 30px;
+    position: sticky;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+/*Decoracion para la clase pagina*/
+.nombrePagina{
+    position: relative;
+    top: 25px;
+    padding-top: 5px;
+    padding-left: 5px;
+    display: inline-block;
+}
+/*Tamaño, separación y alineacion para las etiquetas h1 que se encuentre en la clase nombrePagina*/
+.nombrePagina h1{
+    font-size: 30px;
+    padding-right: 280px;
+    display: inline-block;
+}
+/*Tamaño, separación y alineacion para las etiquetas h2 que se encuentre en la clase nombrePagina*/
+.nombrePagina h2{
+    font-size: 25px;
+    display: inline-block;
+    padding-left: 280px;
+}
+/*Separacion, tamaño de la fuente, posicion para la clase navegador*/
+.navegador{
+    display: inline-block;
+    font-size: 20px;
+    position: sticky;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+}
+/*Decoracion para la etiqueta ul de la clase navegador*/
+.navegador ul{
+    list-style-type: none;
+}
+
+/*Alineacion y margen para las etiquetas li de la clase navegador*/
+.navegador li{
+    display: inline-block;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+/*Pseudoclase para la clase navegador para colocar un color a los elementos al momento de acercar el mouse*/
+.navegador :hover{
+    color: #0074ff;
+}
+
+/*Pseudoclase para la clase navegador para colocar un color a los elementos al momento de dar click*/
+.navegador :active{
+    color: blueviolet;
+}
+
+/*Fuente, fondo, bordes, margen y tamaño de la fuente para la clase titulo*/
+.titulo{
+    font-family: 'Quicksand Bold', sans-serif;
+    background: beige;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+/*Alineacion y separacion para las etiquetas h3 de la clase titulo*/
+.titulo h3{
+    padding: 10px;
+    text-align: center;
+}
+
+/*Fondo, tamaño, bordes, alineacion, margen para la clase platos*/
+.platos{
+    background: beige;
+    width: 350px;
+    height: 750px;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 10px;
+}
+
+/*Pseudoclase para la clase navegador para mostrar una sombra a los elementos al momento de acercar el mouse*/
+.platos:hover{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/*Separacion para las etiquetas h4 de la clase platos*/
+.platos h4{
+    padding: 15px 0px 0px 0px;
+}
+
+/*Fuente, tamaño de la fuente, alineacion y separacion para las etiquetas p de la clase platos*/
+.platos p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+}
+
+/*Fuente, tamaño de la fuente, alineacion, bordes para la etiqueta table de la clase platos*/
+.platos table{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+/*Separacion para las etiquetas th de la clase platos*/
+.platos th{
+    padding: 20px ;
+}
+
+/*Separacion para las etiquetas td de la clase platos*/
+.platos td{
+    padding: 15px;
+}
+
+/*Decoracion y funcionamiento para la clase slide*/
+.slide {
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+.slide-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+.slide-control.prev {
+    left: 2%;
+}
+.slide-control.next {
+    right: 2%;
+}
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+
+/*Fondo, tamaño, bordes, alineacion, margen para la clase caja*/
+.caja{
+    background: beige;
+    width: 980px;
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+/*Fuente y tamaño de la fuente para la etiqueta h4 de la clase caja*/
+.caja h4{
+    font-family: 'Quicksand Bold', sans-serif;
+    font-size: 20px;
+}
+
+/*Fuente. tamaño de la fuente, alineacion y separacion para la etiqueta p de la clase caja*/
+.caja p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+}
+
+/*Margen y bordes para la etiqueta img de la clase caja*/
+.caja img{
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+/*Fuente, tamaño de la fuente y bordes para la etiqueta table de la clase caja*/
+.caja table{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    border-collapse: collapse;
+}
+
+/*Separacion para las etiquetas td de la clase caja*/
+.caja td{
+    padding: 15px;
+}
+
+/*Fondo, tamaño, bordes, alineacion, margen para la clase caja2*/
+.caja2{
+    background: beige;
+    width: 360px;
+    height: auto;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 10px;
+}
+
+/*Pseudoclase para la clase caja2 para mostrar una sombra a los elementos al momento de acercar el mouse*/
+.caja2:hover{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/*Separacion para las etiquetas h4 de la clase caja2*/
+.caja2 h4{
+    padding: 15px 0px 0px 0px;
+}
+
+/*Fuente, tamaño de la fuente, alineacion y separacion para las etiquetas p de la clase caja2*/
+.caja2 p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+}
+
+/*Fondo, alineacion, fuente, tamaño de la fuente, separacion y bordes para la clase piePagina*/
+.piePagina{
+    background: rgb(28,222,39);
+    background: linear-gradient(45deg, rgba(28,222,39,1) 0%, rgba(255,255,255,1) 50%, rgba(233,22,22,1) 100%);
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+}
+
+/*Fondo, tamaño de la fuente, alineacion, separacion, margen y bordes para el id principales*/
+#principales{
+    font-size: 25px;
+    background: rgb(90,248,63);
+    background: linear-gradient(225deg, rgba(90,248,63,1) 0%, rgba(255,255,255,1) 52%, rgba(90,248,63,1) 100%);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+/*Fuente y tamaño de la fuente para las etiquetas h4 de el id principales*/
+#principales h4{
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*Fondo, tamaño de la fuente, alineacion, separacion, margen y bordes para el id bebidas*/
+#bebidas{
+    font-size: 25px;
+    background: rgb(136,250,122);
+    background: linear-gradient(225deg, rgba(136,250,122,1) 0%, rgba(255,255,255,1) 52%, rgba(136,250,122,1) 100%);
+    font-family: 'Golden Lines Serif', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+/*Fuente y tamaño de la fuente para las etiquetas h4 de el id bebidas*/
+#bebidas h4{
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*Fondo, tamaño de la fuente, alineacion, separacion, margen y bordes para el id postres*/
+#postres{
+    font-size: 25px;
+    background: rgb(250,94,90);
+    background: linear-gradient(225deg, rgba(250,94,90,1) 0%, rgba(255,255,255,1) 52%, rgba(250,94,90,1) 100%);
+    font-family: 'Golden Lines Serif', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+/*Fuente y tamaño de la fuente para las etiquetas h4 de el id postres*/
+#postres h4{
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*Fondo, tamaño de la fuente, alineacion, separacion, margen y bordes para el id paquetes*/
+#paquetes{
+    font-size: 25px;
+    background: rgb(251,23,15);
+    background: linear-gradient(225deg, rgba(251,23,15,1) 0%, rgba(255,255,255,1) 52%, rgba(251,23,15,1) 100%);
+    font-family: 'Golden Lines Serif', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+/*Fuente y tamaño de la fuente para las etiquetas h4 de el id paquetes*/
+#paquetes h4{
+    font-size: 22px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*Fondo, tamaño de la fuente, alineacion, separacion, margen, bordes para el id bienvenida*/
+#bienvenida{
+    font-size: 25px;
+    background: rgb(136,250,122);
+    background: linear-gradient(225deg, rgba(136,250,122,1) 0%, rgba(255,255,255,1) 52%, rgba(136,250,122,1) 100%);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+/*Margen y separaccion para las etiquetas p del id bienvenida*/
+#bienvenida p{
+    margin: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*Separacion y bordes para la etiqueta img del id bienvenida*/
+#bienvenida img{
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+/*Fondo, fuente, tamaño de fuente, alineacion, separacion, bordes para el id contacto*/
+#contacto{
+    font-size: 25px;
+    background: rgb(250,94,90);
+    background: linear-gradient(225deg, rgba(250,94,90,1) 0%, rgba(255,255,255,1) 52%, rgba(250,94,90,1) 100%);
+    font-family: 'Golden Lines Serif', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+/*Fondo, tamaño de la fuente, alineacion, separacion, margen y bordes para el id carrusel1*/
+#carrusel1{
+    font-size: 25px;
+    background: rgb(136,250,122);
+    background: linear-gradient(225deg, rgba(136,250,122,1) 0%, rgba(255,255,255,1) 52%, rgba(136,250,122,1) 100%);
+    font-family: 'Golden Lines Serif', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+/*Fuente, tamaño de la fuente, alinecion y separacion para las etiquetas p del id carrusel1*/
+#carrusel1 p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+}
+
+/*Control primer carrusel de imagenes (Galería de comida)*/
+#slide-1-1:checked ~ .control-1-1,
+#slide-2-1:checked ~ .control-2-1,
+#slide-3-1:checked ~ .control-3-1 {
+    display: block;
+}
+
+#slide-1-1:checked ~ .control-1-1 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2-1:checked ~ .control-2-1 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3-1:checked ~ .control-3-1 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo {
+    color: #88FA7A;
+}
+
+/*Fondo, tamaño de la fuente, alineacion, separacion, margen y bordes para el id carrusel2*/
+#carrusel2{
+    font-size: 25px;
+    background: rgb(250,94,90);
+    background: linear-gradient(225deg, rgba(250,94,90,1) 0%, rgba(255,255,255,1) 52%, rgba(250,94,90,1) 100%);
+    font-family: 'Golden Lines Serif', sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+/*Fuente, tamaño de la fuente, alinecion y separacion para las etiquetas p del id carrusel2*/
+#carrusel2 p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+}
+
+/*Control segundo carrusel de imagenes (Galería de restaurante)*/
+#slide-1-2:checked ~ .control-1-2,
+#slide-2-2:checked ~ .control-2-2,
+#slide-3-2:checked ~ .control-3-2 {
+    display: block;
+}
+
+#slide-1-2:checked ~ .control-1-2 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2-2:checked ~ .control-2-2 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3-2:checked ~ .control-3-2 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo {
+    color: #FA5E5A;
+}
+
+/*Fondo, tamaño de la fuente, alineacion, separacion, margen y bordes para el id carrusel3*/
+#carrusel3 {
+    font-size: 25px;
+    background: rgb(90,248,63);
+    background: linear-gradient(225deg, rgba(90,248,63,1) 0%, rgba(255,255,255,1) 52%, rgba(90,248,63,1) 100%);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+/*Fuente, tamaño de la fuente, alinecion y separacion para las etiquetas p del id carrusel3*/
+#carrusel3 p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+}
+
+/*Control tercer carrusel de imagenes (Promociones)*/
+#slide-1-3:checked ~ .control-1-3,
+#slide-2-3:checked ~ .control-2-3,
+#slide-3-3:checked ~ .control-3-3 {
+    display: block;
+}
+
+#slide-1-3:checked ~ .control-1-3 ~ .slide-indicador 
+     li:nth-child(1) .slide-circulo,
+#slide-2-3:checked ~ .control-2-3 ~ .slide-indicador 
+      li:nth-child(2) .slide-circulo,
+#slide-3-3:checked ~ .control-3-3 ~ .slide-indicador 
+      li:nth-child(3) .slide-circulo {
+    color: #88FA7A;
+}
